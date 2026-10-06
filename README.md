@@ -1,4 +1,4 @@
-# Dota 2 AI Assistant
+# DOTA 2 AI Assistant
 
 **Current build:** V44.4\
 **Role:** Real-time Position 1 carry coach for high-level solo queue\
