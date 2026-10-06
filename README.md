@@ -13,7 +13,7 @@
 
 ## 1. What This Project Does
 
-Dota 2 AI Assistant is a real-time strategic coaching system for a
+DOTA 2 AI Assistant is a real-time strategic coaching system for a
 **Position 1 carry player**. It combines Dota 2's Game State Integration telemetry with locally
 derived strategic state, patch-specific knowledge, an Immortal--Divine
 Position 1 benchmark, and an OpenAI model. The result is a live browser
