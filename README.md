@@ -4,9 +4,9 @@
 **Role:** Real-time Position 1 carry coach for high-level solo queue\
 **Patch knowledge:** 7.41f\
 **Backend:** Python + Flask\
-**AI:** OpenAI\
+**AI:** OpenAI GPT-5.6-LUNA\
 **Game telemetry:** DOTA 2 Game State Integration (GSI)\
-**Voice:** Local Kokoro TTS\
+**Voice:** Local Kokoro TTS (Michael)\
 **Dashboard:** Desktop + mobile browser
 
 ------------------------------------------------------------------------
