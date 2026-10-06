@@ -1,6 +1,6 @@
 # Dota 2 AI Assistant
 
-**Current build:** V44.4 --- Map Wave Indicators\
+**Current build:** V44.4\
 **Role:** Real-time Position 1 carry coach for high-level solo queue\
 **Patch knowledge:** 7.41f\
 **Backend:** Python + Flask\
