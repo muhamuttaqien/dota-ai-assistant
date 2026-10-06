@@ -5,7 +5,7 @@
 **Patch knowledge:** 7.41f\
 **Backend:** Python + Flask\
 **AI:** OpenAI\
-**Game telemetry:** Dota 2 Game State Integration (GSI)\
+**Game telemetry:** DOTA 2 Game State Integration (GSI)\
 **Voice:** Local Kokoro TTS\
 **Dashboard:** Desktop + mobile browser
 
@@ -14,7 +14,7 @@
 ## 1. What This Project Does
 
 DOTA 2 AI Assistant is a real-time strategic coaching system for a
-**Position 1 carry player**. It combines Dota 2's Game State Integration telemetry with locally
+**Position 1 carry player**. It combines DOTA 2's Game State Integration telemetry with locally
 derived strategic state, patch-specific knowledge, an Immortal--Divine
 Position 1 benchmark, and an OpenAI model. The result is a live browser
 dashboard plus short spoken coaching.
@@ -32,7 +32,7 @@ mechanical execution. It tries to answer questions such as:
 -   How should the structure state affect the game plan?
 -   How favorable is the current observable game state?
 
-The assistant does **not** control Dota, issue commands, move the hero,
+The assistant does **not** control DOTA, issue commands, move the hero,
 cast spells, or read hidden enemy information.
 
 ------------------------------------------------------------------------
@@ -86,7 +86,7 @@ Raw GSI is therefore not simply dumped into the model every cycle.
 
 ## 3. Information Sources
 
-### 3.1 Dota 2 GSI
+### 3.1 DOTA 2 GSI
 
 The configured GSI feeds include:
 
@@ -232,7 +232,7 @@ The server is running but there is no usable match state.
 
 ### Pre-game
 
-The opening AI carry plan is generated **only** when Dota reports:
+The opening AI carry plan is generated **only** when DOTA reports:
 
 ``` text
 DOTA_GAMERULES_STATE_PRE_GAME
@@ -248,7 +248,7 @@ This prevents premature analysis from an incomplete draft.
 
 ### Live
 
-When Dota reports:
+When DOTA reports:
 
 ``` text
 DOTA_GAMERULES_STATE_GAME_IN_PROGRESS
@@ -292,7 +292,7 @@ After the first successful pre-game analysis, the opening voice briefing
 is spoken once:
 
 ``` text
-Hi, I'm your Dota AI Assistant.
+Hi, I'm your DOTA 2 AI Assistant.
 Your Winning Condition: ...
 Laning: ...
 Items: ...
@@ -1041,7 +1041,7 @@ PORT=5050
 
 ------------------------------------------------------------------------
 
-## 21. Dota 2 GSI Configuration
+## 21. DOTA 2 GSI Configuration
 
 The project includes:
 
@@ -1049,7 +1049,7 @@ The project includes:
 config/gamestate_integration_dota_ai.cfg
 ```
 
-The active Dota configuration must be placed in Dota's:
+The active DOTA configuration must be placed in DOTA's:
 
 ``` text
 game/dota/cfg/gamestate_integration/
@@ -1092,7 +1092,7 @@ http://127.0.0.1:5050
 
 not `/gsi`.
 
-Restart Dota after changing GSI configuration.
+Restart DOTA after changing GSI configuration.
 
 ------------------------------------------------------------------------
 
@@ -1137,7 +1137,7 @@ Internet.
 GET /
 ```
 
-### Dota GSI receiver
+### DOTA GSI receiver
 
 ``` text
 POST /
@@ -1165,7 +1165,7 @@ This endpoint is especially useful when investigating whether a problem
 exists in:
 
 ``` text
-Dota GSI
+DOTA GSI
 → state accumulation
 → normalized observation
 → strategic context
@@ -1392,7 +1392,7 @@ Open `/health`.
 
 ### 2. GSI
 
-Start Dota and verify the dashboard changes to GSI connected.
+Start DOTA and verify the dashboard changes to GSI connected.
 
 ### 3. Raw telemetry
 
@@ -1461,7 +1461,7 @@ Performance Report.
 
 ## 27. Scope and Limitations
 
-This project is a strategic assistant, not an omniscient Dota observer.
+This project is a strategic assistant, not an omniscient DOTA observer.
 
 Its strongest information is the local player's GSI state.
 
@@ -1487,7 +1487,7 @@ is clear.
 
 V44.4 currently combines:
 
--   Dota 2 GSI integration
+-   DOTA 2 GSI integration
 -   stable accumulated local game state
 -   current-visible-only enemy position policy
 -   desktop/mobile dashboard
@@ -1540,12 +1540,12 @@ Open:
 http://127.0.0.1:5050
 ```
 
-Then start Dota 2.
+Then start DOTA 2.
 
 The intended runtime flow is:
 
 ``` text
-Dota GSI
+DOTA GSI
 → local world-state reconstruction
 → strategic derivation
 → dashboard
