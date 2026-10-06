@@ -31,7 +31,7 @@ mechanical execution. It tries to answer questions such as:
 -   How should the structure state affect the game plan?
 -   How favorable is the current observable game state?
 
-The assistant does **not** control DOTA, issue commands, move the hero,
+The assistant does **not** control DOTA 2, issue commands, move the hero,
 cast spells, or read hidden enemy information.
 
 ------------------------------------------------------------------------
@@ -1519,10 +1519,10 @@ V44.4 currently combines:
 
 ``` bash
 # 1. Activate environment
-conda activate indonesia-ai
+conda activate <YOUR_ENVIRONMENT>-ai
 
 # 2. Enter project
-cd ~/Desktop/Indonesia-AI/dota-ai-assistant
+cd ~/Desktop/<YOUR_PROJECT>/dota-ai-assistant
 
 # 3. Confirm important local assets
 ls -lh knowledge/immortal_pos1_7_41f.json
