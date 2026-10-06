@@ -1859,7 +1859,7 @@ def extract_pregame_voice(strategy):
     if len(fields) != 4:
         return None
     return (
-        "Hi, I'm your Dota AI Assistant. "
+        "Hi, I'm your DOTA 2 AI Assistant. "
         f"Your Winning Condition: {fields['WIN_CONDITION']} "
         f"Laning: {fields['LANE']} "
         f"Items: {fields['ITEMS']} "
