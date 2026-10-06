@@ -1,0 +1,21 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Runtime / logs
+logs/
+*.log
+
+# Kokoro models
+models/kokoro/*.onnx
+models/kokoro/*.bin
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

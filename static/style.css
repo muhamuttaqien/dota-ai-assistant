@@ -1,0 +1,148 @@
+:root{color-scheme:dark;--bg:#090b0f;--card:#11151c;--card2:#171c24;--line:#252c37;--text:#f4f7fb;--muted:#929cab;--accent:#e44b4b;--ok:#42d392;--warn:#ffbf69;--blue:#6ea8fe}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#171b22 0,#090b0f 45%);font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;color:var(--text)}.wrap{width:min(1120px,calc(100% - 28px));margin:auto;padding:28px 0 50px}header,.section-head{display:flex;align-items:center;justify-content:space-between;gap:16px}h1{font-size:clamp(25px,5vw,42px);margin:3px 0 22px}h2{font-size:18px;margin:3px 0}.eyebrow,.label{font-size:11px;text-transform:uppercase;letter-spacing:.13em;color:var(--muted)}.pill{padding:8px 12px;border:1px solid var(--line);border-radius:999px;font-size:12px;white-space:nowrap}.pill.online{color:var(--ok);border-color:#275a45}.pill.offline{color:var(--muted)}.hero-card,.ai-card,.budget-card,.panel,.stats article{background:rgba(17,21,28,.94);border:1px solid var(--line);border-radius:16px}.recommendation-first{padding:22px;border-color:#5b3232;margin-bottom:12px}.ai-card h2{font-size:26px}.advice-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px;margin-top:15px}.advice-action,.advice-detail{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:14px}.advice-action{grid-row:span 2}.advice-action strong{display:block;font-size:clamp(18px,3vw,28px);line-height:1.25;margin-top:8px}.advice-detail p{margin:7px 0 0;line-height:1.45}.confidence{grid-column:2/-1;border-radius:10px;padding:8px 12px;text-transform:uppercase;font-size:11px;font-weight:800;letter-spacing:.08em;background:#222831;color:var(--muted)}.confidence.high{color:var(--ok)}.confidence.medium{color:var(--warn)}.confidence.low{color:#ff8989}.advice-empty{color:var(--muted);padding:12px 0}.budget-card{padding:18px;margin-bottom:12px}.budget-main{font-size:clamp(24px,4vw,36px);font-weight:800}.budget-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}.budget-grid>div{display:flex;flex-direction:column;gap:6px}.cost-track{height:8px;background:#252c37;border-radius:99px;overflow:hidden;margin-top:16px}.cost-fill{height:100%;width:0;background:linear-gradient(90deg,var(--ok),var(--warn),var(--accent));transition:width .3s}.cost-caption{display:flex;justify-content:space-between;color:var(--muted);font-size:10px;margin-top:6px}.hero-card{display:grid;grid-template-columns:2fr 1fr 1fr;padding:20px;margin-bottom:12px}.hero-card div{display:flex;flex-direction:column;gap:6px}.hero-card strong{font-size:22px}.grid{display:grid}.stats{grid-template-columns:repeat(4,1fr);gap:10px}.stats article{padding:15px;display:flex;flex-direction:column;gap:6px}.stats strong{font-size:16px}.visual-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.visual-grid .wide{grid-column:1/-1}.panel{padding:18px}.chart-panel canvas{width:100%;height:180px;display:block;margin-top:10px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.list{margin-top:13px;display:grid;gap:8px}.row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line)}.row:first-child{border-top:0}.row small{color:var(--muted)}button{border:0;background:var(--accent);color:white;padding:10px 14px;border-radius:10px;font-weight:700;cursor:pointer}button:disabled{opacity:.45;cursor:wait}.muted{color:var(--muted);font-size:13px}.error{color:#ff8989;margin-top:10px;font-size:13px}footer{text-align:center;color:var(--muted);font-size:11px;margin-top:24px}@media(max-width:700px){.wrap{width:min(100% - 20px,600px);padding-top:18px}.advice-grid{grid-template-columns:1fr}.advice-action{grid-row:auto}.confidence{grid-column:auto}.budget-grid{grid-template-columns:1fr 1fr}.hero-card{grid-template-columns:1fr 1fr}.hero-card div:first-child{grid-column:1/-1;margin-bottom:10px}.stats{grid-template-columns:1fr 1fr}.visual-grid,.two-col{grid-template-columns:1fr}.visual-grid .wide{grid-column:auto}header{align-items:flex-start}.section-head{align-items:flex-start}.hero-card strong{font-size:19px}.chart-panel canvas{height:150px}.cost-caption{gap:12px}}
+
+.strategy-card{margin-bottom:12px}.strategy-card h2{font-size:22px}.draft-line{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0;color:var(--muted);font-size:13px}.draft-line span{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:10px}.strategy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.strategy-item{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:13px;min-width:0}.strategy-item p{margin:7px 0 0;line-height:1.4}.strategy-wide{grid-column:1/-1;border-color:#3d4d39}@media(max-width:700px){.strategy-grid,.draft-line{grid-template-columns:1fr}.strategy-wide{grid-column:auto}}
+
+.meta-card{margin-bottom:12px}.meta-card h2{font-size:22px}.meta-caption{margin-top:10px}.meta-profiles{display:grid;gap:10px;margin-top:14px}.meta-hero{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:14px}.meta-hero-head{display:flex;align-items:baseline;gap:12px;border-bottom:1px solid var(--line);padding-bottom:10px}.meta-hero-head h3{margin:0;font-size:18px}.meta-hero-head p{margin:0;color:var(--muted);font-size:12px;line-height:1.4}.meta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:12px}.meta-col p,.meta-draft p{font-size:12px;line-height:1.45;margin:6px 0}.meta-draft{border-top:1px solid var(--line);margin-top:10px;padding-top:10px}@media(max-width:700px){.meta-grid{grid-template-columns:1fr}.meta-hero-head{display:block}.meta-hero-head p{margin-top:6px}}
+.meta-compact{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.meta-chip{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:9px 11px;font-size:12px;line-height:1.4;max-width:100%}
+/* 2026 polished progressive dashboard */
+:root{--bg:#080c12;--card:#0e141c;--card2:#131b25;--line:#25303d;--text:#f5f7fb;--muted:#8f9caf;--accent:#ef5256;--accent-soft:#7c3034}
+body{background:radial-gradient(900px 480px at 20% -10%,#151d28 0,transparent 60%),linear-gradient(180deg,#090d13,#070b10);min-height:100vh}
+.wrap{width:min(1280px,calc(100% - 48px));padding:30px 0 56px}
+header{margin-bottom:26px}.brand{display:flex;align-items:center;gap:18px}.brand-mark{display:grid;place-items:center;width:48px;height:48px;border-radius:13px;background:linear-gradient(145deg,#f55a5d,#c7383f);box-shadow:0 10px 30px #ef52562b;font-size:20px;color:#fff}h1{font-size:clamp(30px,4vw,43px);letter-spacing:-.035em;margin:4px 0 0}.eyebrow,.label{letter-spacing:.15em}.pill{background:#0b1118;padding:9px 14px}
+.ai-card,.panel,.budget-card,.hero-card,.stats article{box-shadow:0 12px 40px rgba(0,0,0,.12)}.recommendation-first{min-height:235px;padding:26px 30px;border-color:#713237;background:linear-gradient(135deg,rgba(18,24,33,.98),rgba(12,17,24,.98));margin-bottom:24px}.ai-card h2{font-size:25px}.empty-state{grid-column:1/-1;min-height:120px;display:flex;align-items:center;justify-content:center;gap:34px;color:var(--muted)}.empty-state strong{display:block;color:var(--text);font-size:22px;margin-bottom:7px}.empty-state p{margin:0;line-height:1.5}.pulse-bars{display:flex;align-items:center;gap:5px;height:58px}.pulse-bars i{display:block;width:6px;border-radius:8px;background:#64748b}.pulse-bars i:nth-child(1){height:22px}.pulse-bars i:nth-child(2){height:40px}.pulse-bars i:nth-child(3){height:56px}.pulse-bars i:nth-child(4){height:28px}
+.preflight-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:24px}.preflight-grid .panel{margin:0;min-height:158px;padding:24px 28px}.preflight-grid h2{font-size:22px}.strategy-card .draft-line,.strategy-card #knowledge-status,.strategy-card #pregame-status,.strategy-card .strategy-grid,.strategy-card .error,.meta-card .meta-compact{margin-top:12px}.strategy-card:not(.active) .draft-line,.strategy-card:not(.active) #knowledge-status,.strategy-card:not(.active) .strategy-grid,.strategy-card:not(.active) .error{display:none}.strategy-card:not(.active) #pregame-status{font-size:15px;margin-top:14px}.meta-card:not(.active) .meta-compact{font-size:15px}.meta-card:not(.active) .meta-compact .advice-empty{padding:2px 0}.meta-card:not(.active) #meta-mode{display:none}
+.progressive{display:none!important}.progressive.visible{display:grid!important}.budget-card.visible{display:block!important}.visual-grid.visible,.two-col.visible{display:grid!important}
+button{background:linear-gradient(180deg,#f05a5e,#e6494e);border-radius:11px;padding:11px 16px;box-shadow:0 7px 18px rgba(239,82,86,.14)}button:hover{filter:brightness(1.06)}footer{opacity:.65}
+@media(max-width:760px){.wrap{width:min(100% - 24px,640px)}.brand-mark{width:40px;height:40px}.preflight-grid{grid-template-columns:1fr}.recommendation-first{padding:22px;min-height:210px}.empty-state{justify-content:flex-start;gap:22px}.empty-state strong{font-size:18px}.pulse-bars{transform:scale(.82)}header{gap:12px}.section-head button{flex:none}}
+
+/* Dota logo */
+.brand-logo {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Hybrid draft entry + Immortal pace */
+.draft-editor{display:grid;grid-template-columns:1fr 1fr auto;gap:10px;align-items:end;margin-top:12px}.draft-editor label{display:grid;gap:7px}.draft-editor input{width:100%;background:var(--card2);border:1px solid var(--line);border-radius:10px;color:var(--text);padding:11px 12px;font:inherit;outline:none}.draft-editor input:focus{border-color:#53657b}.draft-editor .secondary{background:#202936;box-shadow:none}.pace-body{display:grid;gap:9px;margin-top:14px}.pace-row{display:grid;grid-template-columns:90px 1fr auto;gap:10px;align-items:center;font-size:12px}.pace-track{height:7px;background:#252c37;border-radius:99px;overflow:hidden}.pace-fill{height:100%;background:var(--blue);border-radius:99px}.pace-value{white-space:nowrap;color:var(--muted)}.pace-summary{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:12px}.pace-summary strong.ahead{color:var(--ok)}.pace-summary strong.behind{color:#ff8989}.pace-summary strong.on-pace{color:var(--warn)}
+@media(max-width:760px){.draft-editor{grid-template-columns:1fr}.draft-editor button{width:100%}.pace-row{grid-template-columns:72px 1fr auto}}
+.chart-legend{display:flex;gap:14px;margin-top:9px;font-size:11px;color:var(--muted)}.chart-legend span:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}.legend-green:before{background:#42d392}.legend-blue:before{background:#6ea8fe}
+
+/* Real-time carry cockpit */
+.cockpit-grid{grid-template-columns:1.15fr .85fr;gap:12px;margin-top:12px}.cockpit-wide{grid-column:1/-1}.state-list,.power-state,.event-list{display:grid;gap:0;margin-top:12px}.state-row,.power-row,.event-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:13px}.state-row:first-child,.power-row:first-child,.event-row:first-child{border-top:0}.state-row strong small{font-size:9px;color:var(--muted);margin-left:5px}.good{color:var(--ok)!important}.bad{color:#ff8989!important}.warn{color:var(--warn)!important}
+.resource{display:grid;grid-template-columns:48px 1fr 44px;align-items:center;gap:9px;padding:8px 0;font-size:12px}.resource-track{height:7px;background:#252c37;border-radius:99px;overflow:hidden}.resource-track i{display:block;height:100%;background:var(--ok);border-radius:99px}.resource b{text-align:right}.objectives{margin-top:12px}.objective-team+.objective-team{border-top:1px solid var(--line);margin-top:13px;padding-top:13px}.objective-title{font-size:10px;letter-spacing:.13em;color:var(--muted);margin-bottom:8px}.objective-head,.objective-row{display:grid;grid-template-columns:52px repeat(3,1fr);text-align:center;align-items:center;min-height:28px;font-size:11px}.objective-row>span:first-child{text-align:left;color:var(--muted)}.obj{font-size:17px}.obj.alive{color:var(--ok)}.obj.damaged{color:var(--warn)}.obj.dead{color:#ff8989;display:inline-flex;width:13px;height:13px;align-items:center;justify-content:center;line-height:13px}.obj.unknown{color:#526071}.obj.status-dot,.obj.hp-dot{display:inline-block;width:13px;height:13px;border-radius:50%;vertical-align:middle;box-sizing:border-box}.obj.status-dot.alive{background:var(--ok);box-shadow:inset 0 0 0 2px #171c24}.obj.status-dot.unknown{background:#526071;box-shadow:inset 0 0 0 2px #171c24}.obj.hp-dot{background:conic-gradient(var(--ok) calc(var(--hp) * 1%),#303844 0);box-shadow:inset 0 0 0 2px #171c24}.rax{font-size:11px;font-weight:800}
+.map-panel{min-height:320px}.map-state{margin-top:12px}.map-grid{position:relative;width:min(100%,420px);aspect-ratio:1;margin:auto;border:1px solid #314052;border-radius:14px;overflow:hidden;background:linear-gradient(45deg,rgba(66,211,146,.14) 0 49.6%,rgba(255,255,255,.035) 50%,rgba(239,82,86,.14) 50.4% 100%)}.map-grid:before,.map-grid:after{content:"";position:absolute;background:#263341;opacity:.75}.map-grid:before{width:140%;height:1px;left:-20%;top:50%;transform:rotate(-45deg)}.map-grid:after{height:140%;width:1px;top:-20%;left:50%;transform:rotate(-45deg)}.day-night-indicator{position:absolute;z-index:5;top:9px;right:9px;display:inline-flex;align-items:center;justify-content:center;min-width:58px;height:24px;padding:0 8px;border:1px solid #3b4758;border-radius:999px;background:rgba(13,18,25,.88);backdrop-filter:blur(4px);font-size:9px;font-weight:900;letter-spacing:.09em;color:#d8e0ea;box-shadow:0 2px 10px #0006}.day-night-indicator.day{color:#f5d879}.day-night-indicator.night{color:#b8c8ff}.day-night-indicator.unknown{color:#7d8998}.map-label{position:absolute;z-index:1;font-size:9px;letter-spacing:.12em;color:#64748b}.map-label.top{top:8px;left:50%;transform:translateX(-50%)}.map-label.mid{top:50%;left:50%;transform:translate(-50%,-50%)}.map-label.bot{bottom:8px;left:50%;transform:translateX(-50%)}.hero-dot{position:absolute;z-index:3;transform:translate(-50%,-50%);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#2d8f69;border:2px solid #8ce7bf;color:white;font-size:9px;font-weight:900;box-shadow:0 3px 12px #0008}.map-caption{margin-top:10px;line-height:1.45}.event-row span{color:var(--muted);font-variant-numeric:tabular-nums}.event-row strong{font-size:12px;text-align:right}
+@media(max-width:760px){.cockpit-grid{grid-template-columns:1fr}.cockpit-wide{grid-column:auto}.map-panel{min-height:0}.map-grid{width:min(100%,360px)}.pace-summary{display:grid}.pace-value{font-size:10px}.objective-head,.objective-row{grid-template-columns:45px repeat(3,1fr)}}
+.cockpit-grid.visible{display:grid!important}
+
+.radiant-dot,.ally-dot{background:#2d8f69;border-color:#8ce7bf}.dire-dot,.enemy-dot{background:#9f3038;border-color:#ff8b91}
+
+/* V12: priority strategy cards + bounded cumulative support */
+.strategy-priority{grid-column:1/-1}
+.win-probability-value{display:block;font-size:20px;margin-bottom:7px}
+.win-factors{display:block;font-size:14px;line-height:1.45}
+.meta-card{align-self:start}
+.meta-card .meta-compact{display:flex;flex-direction:column;flex-wrap:nowrap;max-height:460px;overflow-y:auto;overflow-x:hidden;padding-right:6px;scrollbar-gutter:stable}
+.meta-card .meta-chip{flex:0 0 auto;width:100%}
+@media(max-width:700px){.strategy-priority{grid-column:auto}.meta-card .meta-compact{max-height:380px}}
+.preflight-side{display:flex;flex-direction:column;gap:12px;min-width:0}.preflight-side .panel{margin:0}.win-prob-card{min-height:0!important}.win-prob-card h2{font-size:22px}.win-probability-factors{margin:12px 0 6px;line-height:1.45}.win-prob-card #win-probability-value{font-variant-numeric:tabular-nums}.preflight-side .meta-card{min-height:0}@media(max-width:700px){.preflight-side{gap:12px}}
+
+/* V14: live probability placement, equal preflight panels, bottom event feed */
+.win-prob-card{margin:0 0 18px;padding:22px 28px;transition:border-color .2s,background .2s,box-shadow .2s}
+.win-prob-card.win-ahead{border-color:#2f7658;background:linear-gradient(135deg,rgba(24,68,51,.52),rgba(14,20,28,.96));box-shadow:0 12px 36px rgba(66,211,146,.08)}
+.win-prob-card.win-behind{border-color:#8a3940;background:linear-gradient(135deg,rgba(91,34,39,.55),rgba(14,20,28,.96));box-shadow:0 12px 36px rgba(239,82,86,.09)}
+.win-prob-card.win-neutral{border-color:var(--line)}
+.preflight-grid{align-items:start}
+.preflight-grid>.panel{height:auto}
+.meta-card{display:flex;flex-direction:column;align-self:start;min-height:0;overflow:hidden}
+.meta-card .section-head{flex:0 0 auto}
+.meta-card .meta-compact{flex:1 1 auto;min-height:0;max-height:none!important;overflow-y:auto;overflow-x:hidden;padding-right:6px;scrollbar-gutter:stable}
+#event-section{margin-top:12px}
+#event-section.visible{display:block!important}.event-panel{width:100%}
+@media(max-width:760px){.meta-card{height:auto!important}.meta-card .meta-compact{max-height:380px!important}.win-prob-card{padding:20px 22px}}
+.pill.frozen{color:var(--warn);border-color:#765b2c;background:rgba(255,191,105,.06)}
+
+/* V20: GSI trajectory vs Immortal–Divine P50 benchmark */
+.pace-charts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:1fr 1fr;grid-template-areas:"gpm lh" "gpm xpm";gap:10px;margin-top:12px}.pace-chart-card{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:10px;min-width:0}.pace-chart-card.pace-gpm{grid-area:gpm}.pace-chart-card.pace-lh{grid-area:lh}.pace-chart-card.pace-xpm{grid-area:xpm}.pace-chart-head{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px}.pace-chart-head span{display:flex;align-items:center;gap:5px;color:var(--muted);font-size:9px;white-space:nowrap}.pace-chart-head i{display:inline-block;width:14px;height:2px;margin-left:4px}.legend-you{background:var(--blue)}.legend-p50{border-top:2px dashed var(--muted);height:0!important}.pace-chart-card canvas{display:block;width:100%;height:145px;margin-top:6px}.pace-chart-card.pace-gpm canvas{height:330px}.pace-panel .pace-summary{margin-top:0}
+@media(max-width:900px){.pace-charts{grid-template-columns:1fr;grid-template-rows:auto;grid-template-areas:"gpm" "lh" "xpm"}.pace-chart-card canvas,.pace-chart-card.pace-gpm canvas{height:180px}}
+
+/* V24 post-match performance report */
+.performance-report-section{display:none}
+.performance-report-section.visible{display:block}
+.performance-report-panel{border-color:rgba(255,255,255,.12)}
+.performance-report{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
+.performance-report-item{padding:14px;border:1px solid rgba(255,255,255,.08);border-radius:12px;background:rgba(255,255,255,.025)}
+.performance-report-item:first-child,.performance-report-item:last-child{grid-column:1/-1}
+.performance-report-item p{margin:7px 0 0;line-height:1.5}
+@media(max-width:760px){.performance-report{grid-template-columns:1fr}.performance-report-item{grid-column:1!important}}
+
+/* V29: post-match Performance Report outcome tone */
+.performance-report-panel{transition:border-color .2s,background .2s,box-shadow .2s}
+.performance-report-panel.report-win{border-color:#2f7658;background:linear-gradient(135deg,rgba(24,68,51,.52),rgba(14,20,28,.96));box-shadow:0 12px 36px rgba(66,211,146,.08)}
+.performance-report-panel.report-loss{border-color:#8a3940;background:linear-gradient(135deg,rgba(91,34,39,.55),rgba(14,20,28,.96));box-shadow:0 12px 36px rgba(239,82,86,.09)}
+.performance-report-panel.report-exited{border-color:#8a6b39;background:linear-gradient(135deg,rgba(91,67,34,.50),rgba(14,20,28,.96));box-shadow:0 12px 36px rgba(224,173,77,.08)}
+
+/* V32: consistent bottom-panel spacing */
+#budget-section{margin-top:12px}
+
+
+/* V42.2 — Objectives column alignment
+   TOP/MID/BOT headers and every structure value share the exact same grid tracks.
+   Center the indicator inside its grid cell; never position the dot itself. */
+.objective-grid .obj-cell,
+.objective-grid .obj-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.objective-grid .obj-cell > .obj,
+.objective-grid .obj-cell > .status-dot {
+  margin-left: auto;
+  margin-right: auto;
+  flex: 0 0 auto;
+}
+
+/* V42.3: actual Objectives DOM cell centering. */
+.objective-row > .objective-value{
+  width:100%;
+  min-width:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  justify-self:stretch;
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+.objective-row > .objective-value > .obj,
+.objective-row > .objective-value > .rax{
+  margin:0;
+  flex:0 0 auto;
+}
+
+/* V44 — manual opponent structure status. Compact, click-to-update controls. */
+.objective-manual{appearance:none;-webkit-appearance:none;border:0;background:transparent;color:inherit;width:30px;height:26px;padding:0;margin:0;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .12s ease,transform .12s ease}
+.objective-manual:hover{background:rgba(255,255,255,.07)}
+.objective-manual:active{transform:scale(.90)}
+.objective-manual:focus-visible{outline:1px solid var(--ok);outline-offset:1px}
+.objective-manual .obj,.objective-manual .rax{pointer-events:none}
+.objective-manual .rax-dead{color:#ff8989}
+.objective-title small{letter-spacing:.08em}
+
+/* V44.4 — compact lane-wave pressure dots on the minimap */
+.wave-dot{position:absolute;z-index:4;width:10px;height:10px;border-radius:50%;border:2px solid rgba(255,255,255,.78);box-shadow:0 2px 8px #000b;transform:translate(-50%,-50%);pointer-events:auto}
+.wave-dot.ours{background:#42d392}.wave-dot.neutral{background:#a4adba}.wave-dot.theirs{background:#ef5256}.wave-dot.unknown{background:#566170}
+.wave-dot.top{left:50%;top:10%}.wave-dot.mid{left:50%;top:50%}.wave-dot.bot{left:50%;top:90%}

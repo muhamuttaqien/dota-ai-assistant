@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Dota AI Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="brand"><img src="/static/img/logo.png" alt="Dota 2" class="brand-logo"><div><div class="eyebrow">LIVE COPILOT</div><h1>DOTA AI Assistant</h1></div></div>
+    <div id="connection" class="pill offline">Waiting for GSI</div>
+  </header>
+
+  <section class="ai-card recommendation-first">
+    <div class="section-head">
+      <div><span class="label">OPENAI · {{ model }}</span><h2>Recommendation</h2></div>
+      <button id="analyze" onclick="analyzeNow()">Analyze now</button>
+    </div>
+    <div id="ai-status" class="muted">Waiting for in-game data…</div>
+    <div id="advice" class="advice-grid"><div class="empty-state"><div class="pulse-bars"><i></i><i></i><i></i><i></i></div><div><strong>Waiting for in-game data…</strong><p>Launch Dota 2 and start a match to get live analysis and voice guidance.</p></div></div></div>
+    <div id="ai-error" class="error"></div>
+  </section>
+
+  <section class="win-prob-card panel" id="win-prob-panel">
+    <div class="section-head">
+      <div><span class="label">LIVE · UPDATED WITH AI COACH</span><h2>Win probability: <span id="win-probability-value">—</span></h2></div>
+    </div>
+    <p id="win-probability-factors" class="win-probability-factors">Waiting for first 60-second live analysis…</p>
+    <div id="win-probability-updated" class="muted"></div>
+  </section>
+
+  <section class="progressive performance-report-section" id="performance-report-section">
+    <article class="panel performance-report-panel">
+      <div class="section-head"><div><span class="label">POST-MATCH · LESSON LEARNED</span><h2>Performance report</h2></div><strong id="performance-report-status">—</strong></div>
+      <div id="performance-report" class="performance-report"></div>
+    </article>
+  </section>
+
+  <div class="preflight-grid" id="preflight-grid">
+    <section class="strategy-card panel">
+      <div class="section-head">
+        <div><span class="label">IN-GAME STRATEGIST</span><h2>In-game carry plan</h2></div>
+        <button id="pregame-analyze" onclick="analyzePregame()">Analyze strategy</button>
+      </div>
+      <div id="draft-line" class="draft-line">Waiting for draft data from GSI…</div>
+      <div id="pregame-status" class="muted">The strategist updates with the 60-second live analysis cycle.</div>
+      <div id="knowledge-status" class="muted">Patch knowledge loading…</div>
+      <div id="pregame-strategy" class="strategy-grid"></div>
+      <div id="pregame-error" class="error"></div>
+    </section>
+
+    <section class="meta-card panel">
+      <div class="section-head">
+        <div><span class="label">META STRATEGY · <span id="meta-patch">7.41f</span></span><h2>Strategy support</h2></div>
+        <div id="meta-mode" class="pill">Waiting for plan</div>
+      </div>
+      <div id="meta-strategy" class="meta-compact"><div class="advice-empty">Updated with the 60-second in-game strategist. New non-redundant insights accumulate here.</div></div>
+    </section>
+  </div>
+
+  <section class="hero-card progressive" id="match-overview">
+    <div><span class="label">Hero</span><strong id="hero">—</strong></div>
+    <div><span class="label">Time</span><strong id="time">—</strong></div>
+    <div><span class="label">Score</span><strong id="score">—</strong></div>
+  </section>
+
+  <section class="grid stats progressive" id="stats-section">
+    <article><span class="label">Level</span><strong id="level">—</strong></article>
+    <article><span class="label">HP</span><strong id="hp">—</strong></article>
+    <article><span class="label">Mana</span><strong id="mana">—</strong></article>
+    <article><span class="label">Gold</span><strong id="gold">—</strong></article>
+    <article><span class="label">K / D / A</span><strong id="kda">—</strong></article>
+    <article><span class="label">GPM / XPM</span><strong id="gpm">—</strong></article>
+    <article><span class="label">LH / D</span><strong id="lh">—</strong></article>
+    <article><span class="label">State</span><strong id="game-state">—</strong></article>
+  </section>
+
+  <section class="cockpit-grid progressive" id="cockpit-section">
+    <article class="panel pace-panel cockpit-wide"><div class="section-head"><div><span class="label">IMMORTAL–DIVINE POSITION 1</span><h2>Immortal–Divine pace</h2></div><strong id="pace-status">—</strong></div><div id="pace-body" class="pace-body"><div class="muted">Run the benchmark updater to enable current comparisons.</div></div></article>
+    <article class="panel"><div class="section-head"><div><span class="label">DERIVED LOCALLY</span><h2>Strategic state</h2></div><strong id="strategic-badge">—</strong></div><div id="strategic-state" class="state-list"></div></article>
+    <article class="panel"><div class="section-head"><div><span class="label">READINESS</span><h2>Power state</h2></div><strong id="fight-state">—</strong></div><div id="power-state" class="power-state"></div></article>
+    <article class="panel"><div class="section-head"><div><span class="label">STRUCTURES EXPOSED BY GSI</span><h2>Objectives</h2></div></div><div id="objectives" class="objectives"></div></article>
+    <article class="panel map-panel"><div class="section-head"><div><span class="label">HERO POSITIONS · CURRENT-VISIBLE ENEMIES AI-ELIGIBLE</span><h2>Map state</h2></div></div><div id="map-state" class="map-state"><div class="map-grid"></div></div><div id="map-caption" class="muted map-caption"></div></article>
+  </section>
+
+  <section class="two-col progressive" id="details-section">
+    <article class="panel"><div class="section-head"><h2>Items</h2></div><div id="items" class="list"><div class="muted">—</div></div></article>
+    <article class="panel"><div class="section-head"><h2>Abilities</h2></div><div id="abilities" class="list"><div class="muted">—</div></div></article>
+  </section>
+
+  <section class="progressive" id="event-section">
+    <article class="panel event-panel"><div class="section-head"><div><span class="label">GSI EVENT FEED</span><h2>Recent events</h2></div></div><div id="recent-events" class="event-list"></div></article>
+  </section>
+
+  <section class="budget-card progressive" id="budget-section">
+    <div class="section-head"><div><span class="label">LIVE API BUDGET</span><h2>Match spend</h2></div><div class="budget-main" id="cost-idr">$0.0000 (Rp0)</div></div>
+    <div class="budget-grid">
+      <div><span class="label">Projected 45 min</span><strong id="projected-cost">—</strong></div>
+      <div><span class="label">AI calls</span><strong id="ai-calls">0</strong></div>
+      <div><span class="label">Input / Output</span><strong id="token-usage">0 / 0</strong></div>
+      <div><span class="label">Voice</span><strong id="voice-mode">LOCAL / OFFLINE · 0 calls</strong></div>
+    </div>
+    <div class="cost-track"><div id="cost-bar" class="cost-fill"></div></div>
+    <div class="cost-caption"><span>$0.0000 (Rp0)</span><span>LLM API only · local voice costs $0</span></div>
+  </section>
+
+  <footer>GSI refreshes live. Charts sample the local GSI stream; AI analysis runs asynchronously about every {{ interval }}s. Budget shows live LLM API usage in USD and IDR. Voice is generated locally with Kokoro and has $0 API cost.</footer>
+</main>
+<script src="/static/app.js?v=32"></script>
+</body>
+</html>

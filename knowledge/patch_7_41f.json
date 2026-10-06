@@ -1,0 +1,273 @@
+{
+  "patch": "7.41f",
+  "published": "2026-09-15",
+  "source": "https://www.dota2.com/patches/7.41f",
+  "source_type": "Valve official patch notes",
+  "entries": [
+    {
+      "category": "item",
+      "subject": "Infused Raindrops",
+      "change": "Mana Regen bonus decreased from +0.8 to +0.6."
+    },
+    {
+      "category": "item",
+      "subject": "Battle Fury",
+      "change": "Chop Tree cooldown decreased from 4s to 3s."
+    },
+    {
+      "category": "item",
+      "subject": "Daedalus",
+      "change": "Recipe cost increased 900→1000; total cost 5100→5200 gold."
+    },
+    {
+      "category": "item",
+      "subject": "Dragon Lance",
+      "change": "Recipe cost increased 450→550; total cost 1900→2000 gold."
+    },
+    {
+      "category": "item",
+      "subject": "Essence Distiller",
+      "change": "Mana Regen bonus decreased +1.75→+1.5."
+    },
+    {
+      "category": "item",
+      "subject": "Heart of Tarrasque",
+      "change": "Recipe cost increased 700→800; total 5200→5300 gold."
+    },
+    {
+      "category": "item",
+      "subject": "Heaven's Halberd",
+      "change": "Recipe cost decreased 450→350; total 3400→3300 gold."
+    },
+    {
+      "category": "item",
+      "subject": "Hurricane Pike",
+      "change": "Total cost increased 4450→4550 gold due to Dragon Lance cost."
+    },
+    {
+      "category": "item",
+      "subject": "Hydra's Breath",
+      "change": "Recipe cost decreased 1100→1000; total remains 5900 gold."
+    },
+    {
+      "category": "item",
+      "subject": "Manta Style",
+      "change": "Ranged Mirror Image illusion damage decreased 28%→25%."
+    },
+    {
+      "category": "item",
+      "subject": "Mask of Madness",
+      "change": "Lifesteal 24%→22%; creep lifesteal 14.4%→13.2%."
+    },
+    {
+      "category": "item",
+      "subject": "Mjollnir",
+      "change": "Static Charge duration decreased 15s→12s."
+    },
+    {
+      "category": "item",
+      "subject": "Octarine Core",
+      "change": "Recipe cost increased 200→400; total 4900→5100 gold."
+    },
+    {
+      "category": "item",
+      "subject": "Satanic",
+      "change": "Lifesteal 30%→25%; creep lifesteal 18%→15%."
+    },
+    {
+      "category": "item",
+      "subject": "Shiva's Guard",
+      "change": "Arctic Blast damage decreased 260→225."
+    },
+    {
+      "category": "item",
+      "subject": "Silver Edge",
+      "change": "Shadow Walk cooldown 22→23s; bonus movement speed 22%→20%."
+    },
+    {
+      "category": "hero",
+      "subject": "Anti-Mage",
+      "change": "Mana Break: mana burned as damage increased 60%→65%."
+    },
+    {
+      "category": "hero",
+      "subject": "Bane",
+      "change": "Base Armor decreased by 1."
+    },
+    {
+      "category": "hero",
+      "subject": "Batrider",
+      "change": "Intelligence gain 2.9→3.2; damage gain per level 3.5→3.6."
+    },
+    {
+      "category": "hero",
+      "subject": "Bounty Hunter",
+      "change": "Track self bonus gold 130/225/320→80/160/240; ally bonus 50/90/130→40/80/120."
+    },
+    {
+      "category": "hero",
+      "subject": "Bounty Hunter",
+      "change": "Level 10 Shuriken Toss slow talent +0.6s→+0.35s; Track shared vision moved to level 25."
+    },
+    {
+      "category": "hero",
+      "subject": "Broodmother",
+      "change": "Insatiable Hunger mana cost 80→70."
+    },
+    {
+      "category": "hero",
+      "subject": "Centaur Warrunner",
+      "change": "Base damage -2; base movement speed 300→295; Hitch A Ride cast range 250→200."
+    },
+    {
+      "category": "hero",
+      "subject": "Chen",
+      "change": "Strength gain 2.0→2.2; Zealot respawn scales 60s minus 1s per hero level."
+    },
+    {
+      "category": "hero",
+      "subject": "Clockwerk",
+      "change": "Power Cogs mana cost 75→90; knockback duration 0.8→0.7s."
+    },
+    {
+      "category": "hero",
+      "subject": "Disruptor",
+      "change": "Base Intelligence 20→21; level-1 damage 47-51→48-52."
+    },
+    {
+      "category": "hero",
+      "subject": "Earth Spirit",
+      "change": "Base attack speed 100→95; Stone Remnant charge scaling reduced; talents rearranged."
+    },
+    {
+      "category": "hero",
+      "subject": "Ember Spirit",
+      "change": "Base Agility 22→21; level-1 damage 52-56→51-55."
+    },
+    {
+      "category": "hero",
+      "subject": "Enigma",
+      "change": "Demonic Summoning early Eidolon attack range reduced; Black Hole Scepter pull speed 175→150; level-20 Eidolon damage talent +40→+30."
+    },
+    {
+      "category": "hero",
+      "subject": "Hoodwink",
+      "change": "Base Strength 17→16."
+    },
+    {
+      "category": "hero",
+      "subject": "Huskar",
+      "change": "Base Strength 23→22; level-1 damage -1; Strength gain 3.3→3.4."
+    },
+    {
+      "category": "hero",
+      "subject": "Invoker",
+      "change": "Cold Snap cooldown 18→19s; Ghost Walk Shard no longer damages non-hero units."
+    },
+    {
+      "category": "hero",
+      "subject": "Io",
+      "change": "Level-15 Spirits Damage talent +50%→+40%."
+    },
+    {
+      "category": "hero",
+      "subject": "Keeper Of The Light",
+      "change": "Base attack speed 100→90; Chakra Magic cooldown reduction reduced; Spirit Form Illuminate heal 70%→60% (Shard remains 100%)."
+    },
+    {
+      "category": "hero",
+      "subject": "Kez",
+      "change": "Base damage -1; level-20 Kazurai Katana DPS talent +4%→+3.5%."
+    },
+    {
+      "category": "hero",
+      "subject": "Largo",
+      "change": "Island Elixir heal rescaled 34/56/78→30/55/80."
+    },
+    {
+      "category": "hero",
+      "subject": "Lifestealer",
+      "change": "Rage cooldown 20/19/18/17→21/20/19/18s."
+    },
+    {
+      "category": "hero",
+      "subject": "Lifestealer",
+      "change": "Infest Scepter enemy duration 5→4s; level-10 movement speed talent +20→+15."
+    },
+    {
+      "category": "hero",
+      "subject": "Lina",
+      "change": "Base Intelligence 30→28; Fiery Soul attack speed 8/16/24/32→7/14/21/28 and duration 18→16s."
+    },
+    {
+      "category": "hero",
+      "subject": "Lone Druid",
+      "change": "Entangle stack duration 10s→7/8/9/10s."
+    },
+    {
+      "category": "hero",
+      "subject": "Marci",
+      "change": "Rebound ally movement-speed bonus rescaled to 25%."
+    },
+    {
+      "category": "hero",
+      "subject": "Mars",
+      "change": "Base Armor increased by 1."
+    },
+    {
+      "category": "hero",
+      "subject": "Mirana",
+      "change": "Celestial Quiver base charge restore 6→7s; Sacred Arrow max stun early levels reduced."
+    },
+    {
+      "category": "hero",
+      "subject": "Necrophos",
+      "change": "Sadist hero-kill multiplier 6→4; Ghost Shroud restoration amp reduced 55/65/75/85→45/55/65/75%."
+    },
+    {
+      "category": "hero",
+      "subject": "Shadow Fiend",
+      "change": "Necromastery damage per soul scaling reduced; Shadowraze bonus damage per soul 3→2; level-15 Presence armor talent +2→+1.5."
+    },
+    {
+      "category": "hero",
+      "subject": "Slardar",
+      "change": "Base HP regen -0.25; Slithereen Crush damage 75/150/225/300→60/140/220/300."
+    },
+    {
+      "category": "hero",
+      "subject": "Spectre",
+      "change": "Desolate damage scaling reduced from 23+2/level to 23.5+1.5/level."
+    },
+    {
+      "category": "hero",
+      "subject": "Treant Protector",
+      "change": "Base Intelligence 20→17; Nature’s Guise linger 2→1s; Leech Seed now costs 35 mana and healing ratio changed; Living Armor min block 20→10."
+    },
+    {
+      "category": "hero",
+      "subject": "Underlord",
+      "change": "Pit of Malice no longer Scepter-upgraded; Fiend’s Gate Scepter cooldown 100/95/90→90/85/80s."
+    },
+    {
+      "category": "hero",
+      "subject": "Undying",
+      "change": "Base HP regen -0.25; Decay mana cost 100→110."
+    },
+    {
+      "category": "hero",
+      "subject": "Ursa",
+      "change": "Maul health-as-damage increased 1.25%→1.75%."
+    },
+    {
+      "category": "hero",
+      "subject": "Warlock",
+      "change": "Base attack speed 90→95."
+    },
+    {
+      "category": "hero",
+      "subject": "Winter Wyvern",
+      "change": "Arctic Burn cooldown 26/24/22/20→29/26/23/20s; Cold Embrace max-HP heal/sec reduced at early levels."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "patch": "7.41f",
+  "purpose": "Concise strategic profiles for the user's prominent Position 1 hero pool. These are coaching priors, not rigid builds.",
+  "heroes": {
+    "Sven": {
+      "identity": "Tempo physical carry: accelerate with cleave, then convert God\u2019s Strength + mobility/BKB timings into decisive fights.",
+      "skills": [
+        "Great Cleave: farming accelerator; prioritize dense wave + stacked-camp routes.",
+        "Warcry: use proactively for move speed/armor when entering or disengaging, not only after damage starts.",
+        "God's Strength: major commitment window; avoid low-value fights when it is unavailable."
+      ],
+      "items": [
+        "Early farm/tempo: Power Treads + efficient sustain/farm components.",
+        "Core decision: Blink for access; BKB when control prevents sustained hitting.",
+        "Damage after access/survivability: choose crit, attack speed, dispel or anti-evasion according to targets."
+      ],
+      "neutral": [
+        "Prioritize attack speed/damage when you can connect reliably.",
+        "Prefer survivability/status resistance when enemy control is the real limiter.",
+        "Mobility is high value when it changes Blink follow-up or target access."
+      ],
+      "draft": "Prefer when your team can provide vision/setup and the enemy backline is punishable by burst initiation. Be cautious into heavy kiting, saves and repeated BKB-piercing control."
+    },
+    "Ursa": {
+      "identity": "Short-range tempo carry/Roshan threat: win through Fury Swipes stacking, repeated jump windows and forcing close fights.",
+      "skills": [
+        "Fury Swipes: long trades and Roshan scale rapidly; preserve contact on the same target.",
+        "Overpower: synchronize with jump/disable windows rather than spending charges into kite.",
+        "Enrage: defensive timing tool that lets you commit through burst/control windows."
+      ],
+      "items": [
+        "Early tempo: boots + lane/farm efficiency, then solve target access.",
+        "Blink is often the key conversion item; BKB when spells stop contact.",
+        "Basher/Abyssal, dispel or anti-kite options depend on whether lockdown or survivability limits kills."
+      ],
+      "neutral": [
+        "Attack speed has exceptional value when it improves Fury Swipes stacking.",
+        "Movement/access effects are valuable against kite-heavy drafts.",
+        "Durability/status resistance rises in value when you must survive the first control chain."
+      ],
+      "draft": "Prefer into melee/frontline heroes you can stay on and lineups that struggle to reset your engagement. Be cautious into layered slows, disengage, saves and elusive ranged cores."
+    },
+    "Phantom Assassin": {
+      "identity": "Assassination/scaling carry: use Blur/map ambiguity and Phantom Strike access to delete a priority target once defensive answers are solved.",
+      "skills": [
+        "Stifling Dagger: secure lane resources and safely apply attack modifiers.",
+        "Phantom Strike: access + burst window; do not spend it where the exit/kill is unclear.",
+        "Blur: farming/map-pressure tool as well as defense; exploit information denial."
+      ],
+      "items": [
+        "Choose farming acceleration versus earlier Desolator tempo from lane/draft state.",
+        "BKB is often the permission-to-hit item, not an optional luxury.",
+        "Basher/Abyssal, Satanic/dispel, Nullifier, MKB or break are conditional solutions after core damage/access."
+      ],
+      "neutral": [
+        "Raw damage/attack speed amplifies burst when survivability is already solved.",
+        "Defensive/status-resistance choices are better when one disable decides the fight.",
+        "Mobility/access value is lower if Phantom Strike already reaches the correct target reliably."
+      ],
+      "draft": "Prefer when enemy supports/cores can be isolated and lack reliable saves or anti-burst. Be cautious into heavy armor, break, evasion/miss, instant disables and multiple saves."
+    },
+    "Juggernaut": {
+      "identity": "Flexible lane/tempo carry: combine Blade Fury safety, Healing Ward sustain and Omnislash/Swiftslash isolation to pressure objectives and punish separated targets.",
+      "skills": [
+        "Blade Fury: kill/survival tool; avoid wasting it if magic immunity is needed for the next threat.",
+        "Healing Ward: objective and reset resource; ward positioning often determines whether pressure continues.",
+        "Omnislash: strongest on isolated high-value targets; track nearby units and defensive saves before committing."
+      ],
+      "items": [
+        "Build farming/attack-speed efficiency when the map allows scaling; accelerate fighting when your team can convert Omni windows.",
+        "Manta/dispel, BKB, Butterfly/Skadi, Basher or Nullifier are matchup solutions rather than fixed sequence.",
+        "Attack speed improves both farm and ultimate damage delivery; balance it against access and survivability."
+      ],
+      "neutral": [
+        "Attack speed/damage is strong when ultimate and right-click uptime are reliable.",
+        "Defensive/status-resistance options help when you can be controlled outside Blade Fury.",
+        "Mobility is valuable when it creates isolation for Omnislash or improves split-map pressure."
+      ],
+      "draft": "Prefer when Blade Fury answers key magic threats and enemy heroes are vulnerable to isolation. Be cautious into summons/illusion clutter, strong saves, physical mitigation and BKB-piercing lockdown."
+    }
+  }
+}
